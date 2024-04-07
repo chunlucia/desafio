@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 24-03-24</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+
+</head>
+
+
+
+<style>
+    
+    html {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-image: url(images/fondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    body::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    body::-webkit-scrollbar-track {
+        border: 8px solid black;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, -5) inset;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background: linear-gradient(45deg, lightblue, lightgreen);
+    }
+
+    .header {
+        background-color: rgb(234, 157, 236);
+        padding: 6px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+
+    .menu {
+        text-align: center;
+        position: sticky;
+        top: 0px;
+        background-color: rgb(234, 157, 236);
+        padding: 1rem;
+    }
+
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        display: inline-block;
+        margin-left: 0px;
+    }
+
+    .menu a {
+        background-color: rgb(88, 19, 134);
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    /*.menu a:hover {
+    background-color: #FFD200;
+    color: #FFFFFF;
+}
+.menu li:hover {
+    background-color: #FFD200;
+}*/
+
+    .titulo-principal {
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    .texto {
+        text-align: justify;
+        padding: 1rem;
+        margin: 1rem 3rem;
+        font-family: "Libre Baskerville", serif;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: rgb(234, 157, 236);
+        padding: .5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 0 3px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        width: 800px;
+    }
+
+    .card img {
+        padding: 20px;
+        border-radius: 28px;
+        width: 300px;
+        /* Ajusta el ancho de la imagen según tus necesidades */
+        height: auto;
+    }
+
+    .card-info {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .card-info h2 {
+        margin-top: 0;
+    }
+
+    .card-info p {
+        margin-bottom: 0;
+    }
+
+    .container-integrantes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card-integrantes {
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 2px 0 3px 2px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .card-integrantes img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 30px;
+        padding-top: 20px;
+        object-fit: cover;
+    }
+
+    .card-integrantes img:hover{
+        transform: scale(1.2);
+    }
+</style>
+
+
+
+<body>
+    
+    
+    <div class="header">
+        <h1 style="color: black; ">Trabajo en Grupo</h1>
+    </div>
+    <div class=" animate_animated animate_backInDown">
+        <div class="menu">
+            <ul>
+                <li><a href="#contenidos">Contenidos</a></li>
+                <li><a href="#profesores">Profesores</a></li>
+                <li><a href="#integrantes">Integrantes</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="card-container">
+        <div class="card animate_animated animate_fadeInLeftBig" id="contenidos">
+            <img src="images/image1.jpg" alt="programador">
+            <div class="card-info">
+                <h2 class="titulo">Contenidos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet labore hic sunt
+                    quam possimus quo consequuntur eum, consectetur laboriosam blanditiis expedita maiores
+                    deserunt officiis quod soluta nam quaerat incidunt. Atque.</p>
+            </div>
+        </div>
+        <div class="card animate_animated animate_fadeInRightBig" id="profesores">
+            <img src="images/image2.jpg" alt="Descripción de la imagen">
+            <div class="card-info">
+                <h2 class="titulo">Profesores</h2>
+                <p> <b>Santos Sanchez.</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet labore hic sunt
+                    quam possimus quo consequuntur eum, consectetur laboriosam blanditiis expedita maiores
+                    deserunt officiis quod soluta nam quaerat incidunt. Atque.
+                </p>
+            </div>
+        </div>
+        <div id="integrantes">
+            <h2 class="titulo">Integrantes</h2>
+            <div class="container-integrantes">
+                <div class="card-integrantes animate_animated animate_rotateIn">
+                    <img src="images/image3.jpg" alt="arenita">
+                    <h3>Chungara Lucia</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus dolores
+                        exercitationem error sequi assumenda repellat reiciendis qui consectetur voluptatum
+                        doloremque?</p>
+                </div>
+                <div class="card-integrantes animate_animated animate_rotateIn">
+                    <img src="images/image4.png" alt="bob esponja">
+                    <h3>Bogarin Luciano</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus dolores
+                        exercitationem error sequi assumenda repellat reiciendis qui consectetur voluptatum
+                        doloremque?</p>
+                </div>
+                <div class="card-integrantes animate_animated animate_rotateIn">
+                    <img src="images/image5.jpg" alt="señorita puff">
+                    <h3>Lavia Brisa</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus dolores
+                        exercitationem error sequi assumenda repellat reiciendis qui consectetur voluptatum
+                        doloremque?</p>
+                </div>
+                <div class="card-integrantes animate_animated animate_rotateIn">
+                    <img src="images/image6.png" alt="patricio">
+                    <h3>Jesus Cedeño</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus dolores
+                        exercitationem error sequi assumenda repellat reiciendis qui consectetur voluptatum
+                        doloremque?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<footer class="footer">
+    <h2 style="color: black">Primer Programa en grupo</h2>
+    <p style="font-size: 1rem; text-align: center">FullStack Java</p>
+</footer>
+
+</html>
